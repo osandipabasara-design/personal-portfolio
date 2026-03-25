@@ -83,7 +83,7 @@ const About: React.FC = () => {
                 }}
               >
                 <img
-                  src="/profile.jpg"
+                  src="profile.jpg"
                   alt="Osandi Randeniya"
                   style={{
                     width: '100%',
