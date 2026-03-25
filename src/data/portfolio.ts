@@ -11,6 +11,7 @@ export const projects: Project[] = [
     technologies: ['React', 'TypeScript', 'Python', 'MySQL', 'GitHub', 'Figma'],
     features: ['EIM Dashboard', 'Attendance Dashboard', 'Performance Dashboard'],
     github: 'https://github.com/PerformEdge/PerformEdge.git',
+    live: 'https://performedge.me/',
     highlight: true,
   },
   {

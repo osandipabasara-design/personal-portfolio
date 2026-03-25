@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
         },
         body: JSON.stringify({
           // Replace this key with the one sent to you by Web3Forms
-          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY',
+          access_key: '25ae753d-63c9-4ce6-81ca-63596fe0050d',
           name: form.name,
           email: form.email,
           subject: form.subject || 'New message from Portfolio',
