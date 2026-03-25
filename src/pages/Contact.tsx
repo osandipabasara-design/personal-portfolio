@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import { ContactForm } from '../types';
-
 const Contact: React.FC = () => {
   const [form, setForm] = useState<ContactForm>({
     name: '',
@@ -23,10 +22,35 @@ const Contact: React.FC = () => {
 
     setStatus('sending');
 
-    // Simulate send — replace with your backend/EmailJS integration
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    setStatus('success');
-    setForm({ name: '', email: '', subject: '', message: '' });
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          // Replace this key with the one sent to you by Web3Forms
+          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY',
+          name: form.name,
+          email: form.email,
+          subject: form.subject || 'New message from Portfolio',
+          message: form.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus('success');
+        setForm({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      setStatus('error');
+    }
 
     setTimeout(() => setStatus('idle'), 5000);
   };
@@ -249,13 +273,13 @@ const Contact: React.FC = () => {
                     {
                       icon: <Github size={16} />,
                       label: 'GitHub',
-                      value: '@osandipabasara-design',
+                      value: 'https://github.com/osandipabasara-design',
                       href: 'https://github.com/osandipabasara-design',
                     },
                     {
                       icon: <Linkedin size={16} />,
                       label: 'LinkedIn',
-                      value: 'Osandi Randeniya',
+                      value: 'https://www.linkedin.com/in/osandi-randeniya-a59b61353',
                       href: 'https://www.linkedin.com/in/osandi-randeniya-a59b61353',
                     },
                   ].map(({ icon, label, value, href }) => (

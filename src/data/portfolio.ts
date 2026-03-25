@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: 'performedge',
     title: 'PerformEdge HR Dashboard',
     description:
-      'An interactive HR analytics dashboard centralising IIT's HR data into a unified visualisation system. Generates real-time analytical insights for management decision-making.',
+      "An interactive HR analytics dashboard centralising IIT's HR data into a unified visualisation system. Generates real-time analytical insights for management decision-making.",
     type: 'group',
     period: 'Sep 2025 – Apr 2026',
     technologies: ['React', 'TypeScript', 'Python', 'MySQL', 'GitHub', 'Figma'],
