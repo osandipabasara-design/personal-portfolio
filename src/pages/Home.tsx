@@ -34,31 +34,7 @@ const Home: React.FC = () => {
       >
         <div className="container">
           <div style={{ maxWidth: 720 }}>
-            {/* Status badge */}
-            <div className="anim-fade-up-1" style={{ marginBottom: 32 }}>
-              <span
-                className="badge"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: 8,
-                  padding: '8px 16px',
-                  fontSize: 13,
-                }}
-              >
-                <span
-                  style={{
-                    width: 7,
-                    height: 7,
-                    borderRadius: '50%',
-                    background: '#4ecdc4',
-                    animation: 'pulse-glow 2s infinite',
-                    flexShrink: 0,
-                  }}
-                />
-                Open to Internship Opportunities
-              </span>
-            </div>
+
 
             {/* Name */}
             <h1

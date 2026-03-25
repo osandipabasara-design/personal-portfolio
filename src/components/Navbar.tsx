@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
   return (
     <nav style={{ boxShadow: scrolled ? '0 4px 30px rgba(0,0,0,0.3)' : 'none' }}>
       <span className="nav-logo">
-        OR<span>.</span>
+        My Portfolio
       </span>
 
       <ul className={`nav-links${open ? ' open' : ''}`}>

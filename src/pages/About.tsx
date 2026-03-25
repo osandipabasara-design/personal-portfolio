@@ -72,6 +72,36 @@ const About: React.FC = () => {
             <div className="anim-fade-up-2">
               <div
                 style={{
+                  width: 140,
+                  height: 140,
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  marginBottom: 28,
+                  border: '2px solid var(--accent)',
+                  padding: 4,
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
+                }}
+              >
+                <img
+                  src="/profile.jpg"
+                  alt="Osandi Randeniya"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    objectPosition: 'center top',
+                    borderRadius: '50%',
+                    background: 'var(--bg-card2)',
+                  }}
+                  onError={e => {
+                    (e.target as HTMLImageElement).src =
+                      'https://ui-avatars.com/api/?name=Osandi+Randeniya&background=ffb950&color=08080f&size=150';
+                  }}
+                />
+              </div>
+
+              <div
+                style={{
                   fontSize: 17,
                   lineHeight: 1.85,
                   color: 'var(--text-secondary)',
@@ -96,7 +126,7 @@ const About: React.FC = () => {
                 <p>
                   I'm actively seeking a{' '}
                   <span style={{ color: 'var(--teal)', fontWeight: 500 }}>
-                    Data Analyst Internship
+                    Data Analyst Role
                   </span>{' '}
                   where I can apply my analytical skills, contribute to real business
                   insights, and grow in a hands-on, professional environment.

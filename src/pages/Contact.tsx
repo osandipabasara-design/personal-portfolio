@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
           <span className="section-label anim-fade-up-1">Let's Connect</span>
           <h1 className="section-title anim-fade-up-2">Get in Touch</h1>
           <p className="section-sub anim-fade-up-3">
-            Open to internship opportunities, collaborations, and conversations. Reach
+            Open to general opportunities, collaborations, and conversations. Reach
             out — I'd love to hear from you.
           </p>
         </div>
@@ -119,7 +119,7 @@ const Contact: React.FC = () => {
                   name="subject"
                   value={form.subject}
                   onChange={handleChange}
-                  placeholder="Internship opportunity, collaboration..."
+                  placeholder="Career opportunity, collaboration..."
                 />
               </div>
 
@@ -318,24 +318,7 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
-              {/* Availability note */}
-              <div
-                style={{
-                  padding: '20px 24px',
-                  borderRadius: 14,
-                  background: 'linear-gradient(135deg, rgba(255,185,80,0.08), rgba(78,205,196,0.06))',
-                  border: '1px solid var(--border-hover)',
-                  fontSize: 14,
-                  color: 'var(--text-secondary)',
-                  lineHeight: 1.7,
-                }}
-              >
-                <span style={{ display: 'block', fontWeight: 600, color: 'var(--accent)', marginBottom: 6, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                  Currently Available
-                </span>
-                Open to internship opportunities in data analytics, web development, or
-                software engineering. Based in Sri Lanka — remote-friendly.
-              </div>
+
             </div>
           </div>
         </div>
