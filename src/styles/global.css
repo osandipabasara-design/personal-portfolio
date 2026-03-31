@@ -296,8 +296,40 @@ nav {
 @media (max-width: 640px) {
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
   nav { padding: 0 24px; }
-  .container { padding: 0 24px; }
-  .section { padding: 60px 0; }
+  .container { padding: 0 20px; }
+  .section { padding: 48px 0; }
+}
+
+/* ---- PAGE GRID (Split layout) ---- */
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: start;
+}
+
+.contact-card {
+  padding: 40px;
+}
+
+@media (max-width: 1024px) {
+  .page-grid {
+    grid-template-columns: 1fr 320px;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 850px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-card {
+    padding: 24px;
+  }
 }
 
 /* ---- DIVIDER ---- */

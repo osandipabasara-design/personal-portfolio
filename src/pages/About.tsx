@@ -60,14 +60,7 @@ const About: React.FC = () => {
       {/* Bio + Info */}
       <section style={{ paddingBottom: 60 }}>
         <div className="container">
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 340px',
-              gap: 48,
-              alignItems: 'start',
-            }}
-          >
+          <div className="page-grid">
             {/* Bio */}
             <div className="anim-fade-up-2">
               <div

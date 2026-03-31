@@ -74,16 +74,9 @@ const Contact: React.FC = () => {
       {/* Content */}
       <section style={{ paddingBottom: 80 }}>
         <div className="container">
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 380px',
-              gap: 48,
-              alignItems: 'start',
-            }}
-          >
+          <div className="page-grid">
             {/* Form */}
-            <div className="card anim-fade-up-2" style={{ padding: 40 }}>
+            <div className="card anim-fade-up-2 contact-card">
               <h2 style={{ fontSize: 22, fontWeight: 700, marginBottom: 32 }}>
                 Send a Message
               </h2>
@@ -311,7 +304,7 @@ const Contact: React.FC = () => {
                       <span style={{ color: 'var(--accent)' }}>{icon}</span>
                       <div>
                         <div style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 1 }}>{label}</div>
-                        <div style={{ fontSize: 13, color: 'var(--text-primary)', fontWeight: 500 }}>{value}</div>
+                        <div style={{ fontSize: 13, color: 'var(--text-primary)', fontWeight: 500, wordBreak: 'break-all' }}>{value}</div>
                       </div>
                     </a>
                   ))}
