@@ -62,7 +62,7 @@ const About: React.FC = () => {
         <div className="container">
           <div className="page-grid">
             {/* Bio */}
-            <div className="anim-fade-up-2">
+            <div className="anim-fade-up-2 about-bio">
               <div
                 style={{
                   width: 140,

@@ -234,7 +234,7 @@ const Contact: React.FC = () => {
                       >
                         {icon}
                       </div>
-                      <div>
+                      <div className="text-container">
                         <div style={{ fontSize: 11, color: 'var(--text-muted)', marginBottom: 3, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
                           {label}
                         </div>
@@ -302,7 +302,7 @@ const Contact: React.FC = () => {
                       }}
                     >
                       <span style={{ color: 'var(--accent)' }}>{icon}</span>
-                      <div>
+                      <div className="text-container">
                         <div style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 1 }}>{label}</div>
                         <div style={{ fontSize: 13, color: 'var(--text-primary)', fontWeight: 500, wordBreak: 'break-all' }}>{value}</div>
                       </div>
@@ -310,8 +310,6 @@ const Contact: React.FC = () => {
                   ))}
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>

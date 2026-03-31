@@ -312,6 +312,11 @@ nav {
   padding: 40px;
 }
 
+.text-container {
+  min-width: 0;
+  flex: 1;
+}
+
 @media (max-width: 1024px) {
   .page-grid {
     grid-template-columns: 1fr 320px;
@@ -322,13 +327,29 @@ nav {
 @media (max-width: 850px) {
   .page-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 60px;
   }
 }
 
 @media (max-width: 640px) {
   .contact-card {
     padding: 24px;
+  }
+  .section-sub {
+    font-size: 15px;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px !important;
+  }
+  .footer-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px !important;
+  }
+  .about-bio {
+    margin-top: 20px;
   }
 }
 

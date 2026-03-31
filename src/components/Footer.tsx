@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
       }}
     >
       <div
-        className="container"
+        className="container footer-content"
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
           ))}
         </div>
 
-        <nav style={{ display: 'flex', gap: 20 }}>
+        <nav className="footer-nav" style={{ display: 'flex', gap: 20 }}>
           {[
             { to: '/', label: 'Home' },
             { to: '/about', label: 'About' },
