@@ -261,7 +261,7 @@ const About: React.FC = () => {
       <section style={{ paddingBottom: 60 }}>
         <div className="container">
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-            {['Python', 'JavaScript', 'TypeScript', 'Java', 'SQL', 'HTML5', 'CSS3', 'React', 'Node.js', 'MySQL', 'Git', 'GitHub', 'Figma', 'Machine Learning', 'Data Visualisation', 'REST APIs'].map(t => (
+            {['Python', 'R', 'JavaScript', 'TypeScript', 'Java', 'SQL', 'HTML5', 'CSS3', 'React', 'Node.js', 'MySQL', 'Git', 'GitHub', 'Figma', 'Machine Learning', 'Data Visualisation', 'REST APIs'].map(t => (
               <span key={t} className="tech-tag">{t}</span>
             ))}
           </div>

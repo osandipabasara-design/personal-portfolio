@@ -56,10 +56,12 @@ export const technicalSkills: Skill[] = [
   { name: 'SQL', level: 70, category: 'language' },
   { name: 'Java', level: 55, category: 'language' },
   { name: 'HTML / CSS', level: 85, category: 'language' },
+  { name: 'R', level: 60, category: 'language' },
   { name: 'React', level: 72, category: 'framework' },
   { name: 'Node.js', level: 50, category: 'framework' },
   { name: 'Git & GitHub', level: 75, category: 'tool' },
   { name: 'MySQL', level: 65, category: 'tool' },
+  { name: 'Power BI', level: 65, category: 'tool' },
   { name: 'Figma', level: 60, category: 'tool' },
   { name: 'Machine Learning', level: 45, category: 'tool' },
 ];
