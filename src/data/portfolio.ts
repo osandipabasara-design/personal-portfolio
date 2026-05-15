@@ -74,6 +74,9 @@ export const softSkills: Skill[] = [
 ];
 
 export const certificates: Certificate[] = [
+  { title: 'Python Data Structures and Algorithms', issuer: 'LinkedIn Learning', year: '2026' },
+  { title: 'Java: Data Structures', issuer: 'LinkedIn Learning', year: '2026' },
+  { title: 'Introduction to Data for Decision Makers Job Simulation', issuer: 'BCG X & Forage', year: '2026' },
   { title: 'Python GUI Development with Tkinter', issuer: 'LinkedIn Learning', year: '2025' },
   { title: 'Machine Learning', issuer: 'IIT Campus (PD Course)', year: '2025' },
   { title: 'Industry Survival — SKILL UP 3.0', issuer: 'Leos of Sri Lanka & Maldives', year: '2025' },
